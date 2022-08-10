@@ -2,9 +2,16 @@ name: TabCompleteFilter
 main: lee.code.tcf.TabCompleteFilter
 version: ${project.version}
 api-version: 1.13
-author: Lee
+authors: [Lee, MineBlock Team.]
 
 commands:
   tcf:
     description: Use the tcf command.
-    permission: tcf.command.use
+    permission: mineblock.commannd.tcf
+permissions:
+  mineblock.command.tcf:
+    default: op
+    description: 允许使用 /tcf
+  mineblock.bypass.tabcompletefilter:
+    description: 允许绕过 Tab 补全限制
+    default: op
